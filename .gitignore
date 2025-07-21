@@ -195,3 +195,6 @@ storage/
 
 # Ignore Action Cable logs
 log/cable.log
+
+/vendor/**
+/vender/**
