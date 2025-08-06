@@ -8,6 +8,8 @@ require 'puma'
 require 'sprockets/railtie'
 require 'devise'
 require 'simple_form'
+require 'carrierwave'
+require 'mini_magick'
 
 module Shop
   class Application < Rails::Application
