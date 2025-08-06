@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   belongs_to :user, optional: true
 
   mount_uploader :image, ImageUploader
-  serialize :image, JSON # If you use SQLite, add this line
+  # serialize :image, JSON # Commented out - not needed with CarrierWave in Rails 8
 
   validates :title, :brand, :price, :model, presence: true
   # Set max lenght to the description, price and title 
